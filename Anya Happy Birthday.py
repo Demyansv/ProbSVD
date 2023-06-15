@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot('5810968105:AAHnrwayh704VNbIBFWnLiW')
+bot = telebot.TeleBot('5810968105:AAHnrwayh704VNbIBFWnLiWw1Vg9cohs8vo')
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -27,4 +27,4 @@ def get_text_messages(message):
     elif message.text == '❓Успехов в профессии (и на меня тоже)':
         bot.send_message(message.from_user.id, '❤Пусть опыт и навыки растут в геометрической прогрессии, побольше радостных клиентов и покороения новых вершин! Ты на правильном пути!', parse_mode='Markdown')
 
-bot.polling(none_stop=True, interval=0) #обязательная для работы бота часть
+bot.polling(none_stop=True, interval=0)
