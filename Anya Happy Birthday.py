@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot('5810968105:AAHnrwayh704VNbIBFWnLiWw1Vg9cohs8vo')
+bot = telebot.TeleBot('5810968105:AAHnrwayh7O4VNbIBFWnLiWw1Vg9cohs8vo')
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -21,10 +21,10 @@ def get_text_messages(message):
         bot.send_message(message.from_user.id, '❓С чего начнёшь?)', reply_markup=markup)
 
     elif message.text == '❓Удачи во всём (нажми меня)':
-        bot.send_message(message.from_user.id, '🎊Желаю тебе море позитива и супер настроения!', parse_mode='Markdown')
+        bot.send_message(message.from_user.id, '🎊Желаю тебе море позитива, суперсого настроения и только хорошего!', parse_mode='Markdown')
     elif message.text == '❓Счастья в личной жизни (тоже нажми)':
-        bot.send_message(message.from_user.id, '🫦Пусть твой дом наполняет любовь и здоровье!', parse_mode='Markdown')
+        bot.send_message(message.from_user.id, '🫦Пусть твой дом наполняет любовь, у тебя и твоих родных будет крепкое здоровье!', parse_mode='Markdown')
     elif message.text == '❓Успехов в профессии (и на меня тоже)':
-        bot.send_message(message.from_user.id, '❤Ты на правильном пути, становись только лучше!', parse_mode='Markdown')
+        bot.send_message(message.from_user.id, '❤Ты на правильном пути, становись только лучше, пусть в геометрической прогрессии растёт количесвто клиентов!', parse_mode='Markdown')
 
 bot.polling(none_stop=True, interval=0)
